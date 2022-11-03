@@ -1,0 +1,379 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@500;600;700&family=Montserrat:wght@500&display=swap");
+
+body {
+  background-color: #101431;
+}
+
+h1 {
+  font-family: "Hind Madurai", sans-serif !important;
+  font-weight: 700;
+  font-size: 21pt;
+  color: white;
+}
+
+h2 {
+  font-family: "Hind Madurai", sans-serif !important;
+  font-weight: 600;
+  font-size: 21pt;
+  color: white;
+}
+
+h3 {
+  font-family: "Hind Madurai", sans-serif !important;
+  font-weight: 600;
+  font-size: 14pt;
+  color: white;
+}
+h4 {
+  font-family: "Hind Madurai", sans-serif !important;
+  font-weight: 600;
+  font-size: 12pt;
+  color: white;
+}
+h5 {
+  font-family: "Hind Madurai", sans-serif !important;
+  color: #101431;
+  font-weight: 600;
+  font-size: 12pt;
+}
+
+p {
+  color: white;
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 500;
+  font-size: 13pt;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-family: "Hind Madurai", sans-serif !important;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  background-size: 68%;
+  background-image: url("../img/line.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.nav-link.active {
+  background-size: 68%;
+  background-image: url("../img/line.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.btn-outline-primary {
+  width: 43mm;
+  border-color: #16baff;
+  color: white;
+  font-weight: 500;
+  border-radius: 25px;
+  border-width: 0.2rem;
+}
+
+@media screen and (max-width: 55em) {
+  .btn-outline-primary {
+    display: block;
+    width: 100%;
+  }
+}
+
+.btn-outline-primary:hover {
+  transition: all 0.3s ease-in-out 0s;
+  background-color: #16baff;
+  border-color: #16baff;
+}
+
+.btn-bd-primary {
+  width: 43mm;
+  color: white;
+  font-weight: 500;
+  border-radius: 25px;
+  background-color: #523ffb;
+}
+
+@media screen and (max-width: 55em) {
+  .btn-bd-primary {
+    display: block;
+    width: 100%;
+  }
+}
+
+.btn-bd-primary:hover {
+  transition: all 0.3s ease-in-out 0s;
+  color: white;
+  border-width: 0.2rem;
+  border-color: #523ffb;
+}
+
+.btn-github {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4pt;
+  width: fit-content;
+  color: white;
+  font-weight: 500;
+  border-width: 0.2rem;
+  border-color: #16baff;
+  border-radius: 25px;
+  background-color: #16baff;
+  line-height: 35px;
+}
+
+.btn-github:hover {
+  transition: all 0.3s ease-in-out 0s;
+  color: white;
+  border-width: 0.2rem;
+  border-color: #16baff;
+}
+
+.btn-github i {
+  padding-right: 10px;
+}
+
+.btn-social {
+  width: 100%;
+  height: 92%;
+  background-color: #16baff;
+  border-radius: 50%;
+}
+
+.btn-social:hover {
+  background-color: #523ffb;
+  color: white;
+}
+
+.col {
+  margin-top: 0;
+}
+
+.detail-button {
+  float: right;
+}
+
+.btn-detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  padding-left: 4pt;
+  color: white;
+  font-weight: 500;
+  border-width: 0.2rem;
+  border-color: #16baff;
+  border-radius: 25px;
+  background-color: #16baff;
+  line-height: 16px;
+}
+
+.btn-detail:hover {
+  transition: all 0.3s ease-in-out 0s;
+  color: white;
+  border-width: 0.2rem;
+  background-color: #0c85b9;
+  border-color: #16baff;
+}
+
+.btn-detail i {
+  padding-right: 10px;
+}
+
+.bi {
+  font-size: 1.8rem;
+  color: #101431;
+}
+
+.bi-fill {
+  background-color: #101431;
+  font-size: 1.8rem;
+  color: #16baff;
+}
+
+.bi-fill:hover {
+  color: #523ffb;
+}
+
+.bi:hover {
+  color: white;
+}
+
+.page-section {
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 3%;
+}
+
+.line {
+  border-radius: 5pt;
+  height: 0.4em;
+  width: 100%;
+  background-color: #16baff;
+}
+
+/* The actual timeline (the vertical ruler) */
+.main-timeline-5 {
+  padding-left: 10pt;
+  position: relative;
+  max-width: 100%;
+}
+
+/* The actual timeline (the vertical ruler) */
+.main-timeline-5::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  background-color: #16baff;
+  top: 0;
+  bottom: 0;
+  left: auto;
+  height: 95%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.timeline-5 {
+  position: relative;
+  background-color: inherit;
+  width: 100%;
+}
+
+/* The circles on the timeline */
+.timeline-5::after {
+  content: "";
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  right: 1px;
+  background-color: #16baff;
+  top: 18px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the right */
+.right-5 {
+  padding: 0px 0px 20px 30px;
+  left: auto;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right-5::before {
+  content: " ";
+  position: absolute;
+  top: 18px;
+  z-index: 1;
+  left: 20px;
+  border: medium solid #523ffb;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #523ffb transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right-5::after {
+  left: -10px;
+}
+
+@media (max-width: 991px) {
+  .main-timeline-5 {
+    max-width: 100%;
+  }
+}
+
+.edu-logo {
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  .edu-logo {
+    display: block;
+    margin: auto;
+    width: 40%;
+  }
+}
+.gradient-custom-5 {
+  /* fallback for old browsers */
+  background: #523ffb;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, rgba(235, 187, 167, 1), rgba(207, 199, 248, 1));
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, rgba(235, 187, 167, 1), rgba(207, 199, 248, 1));
+}
+
+.description {
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 500;
+  font-size: 12pt;
+}
+.card {
+  border-color: #523ffb;
+  border-radius: 10pt;
+  background-color: #523ffb;
+}
+
+.col {
+  padding-top: 12pt;
+  padding-bottom: 12pt;
+}
+
+.skill {
+  width: 100px;
+  height: auto;
+}
+
+@media (max-width: 991px) {
+  .skill {
+    width: 80px;
+  }
+}
+
+.project-cover {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-top-right-radius: 10pt;
+  border-top-left-radius: 10pt;
+}
+
+.form-control {
+  color: white;
+  border-radius: 8pt;
+  border-width: 0;
+  padding: 8pt;
+  background-color: #523ffb;
+}
+.form-control:active,
+.form-control:focus {
+  color: white;
+  border-radius: 8pt;
+  border-width: 0;
+  padding: 8pt;
+  background-color: #523ffb;
+}
+
+.floatingInput {
+  color: white;
+}
+
+.footer {
+  margin-top: 25pt !important;
+  padding: 14pt 5%;
+  height: fit-content;
+  margin: 0;
+  background-color: #16baff;
+}
+
+.footer-cp {
+  font-size: 12pt;
+  text-align: right;
+}
