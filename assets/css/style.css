@@ -87,9 +87,26 @@ a:hover {
 }
 
 .btn-outline-primary:hover {
-  transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s !important;
   background-color: #16baff;
   border-color: #16baff;
+}
+
+.btn-loading-primary:disabled {
+  width: 43mm;
+  background-color: #16baff;
+  border-color: #16baff;
+  color: white;
+  font-weight: 500;
+  border-radius: 25px;
+  border-width: 0.2rem;
+}
+
+@media screen and (max-width: 55em) {
+  .btn-loading-primary {
+    display: block;
+    width: 100%;
+  }
 }
 
 .btn-bd-primary {
@@ -108,7 +125,7 @@ a:hover {
 }
 
 .btn-bd-primary:hover {
-  transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s !important;
   color: white;
   border-width: 0.2rem;
   border-color: #523ffb;
@@ -176,7 +193,7 @@ a:hover {
 }
 
 .btn-detail:hover {
-  transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s !important;
   color: white;
   border-width: 0.2rem;
   background-color: #0c85b9;
