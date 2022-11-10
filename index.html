@@ -333,7 +333,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
               </div>
             </div>
-            <form method="POST" id="contactForm" name="submit-to-google-sheet" class="contactForm">
+            <form id="contactForm" name="submit-to-google-sheet" class="contactForm">
               <div class="row pt-2">
                 <div class="col-md-6 mb-4">
                   <div class="form-floating">
@@ -409,9 +409,6 @@
         })
         .scroll();
     </script>
-<script src="https://wzrd.in/standalone/formdata-polyfill"></script>
-<script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
-<script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
 
     <script>
       const scriptURL = "https://script.google.com/macros/s/AKfycbxW1laHCJhiHkxqOJ8rGUiXy-BEaJvg6ZC2KWxTdeNNexTz2KxVU49X9e3wL8mCBBnZWw/exec";
@@ -421,9 +418,9 @@
       const sendAlert = document.querySelector(".alert-primary");
 
       form.addEventListener("submit", (e) => {
+        e.preventDefault();
         btnSend.classList.toggle("d-none");
         btnLoading.classList.toggle("d-none");
-        e.preventDefault();
         fetch(scriptURL, { method: "POST", body: new FormData(form) })
           .then((response) => {
             console.log("Success!", response);
