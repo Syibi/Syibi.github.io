@@ -292,13 +292,13 @@
       <div class="container px-4 pt-5" id="Contact">
         <div class="row pt-5">
           <div class="text-center">
-            <h2>Contact Me</h2>
+            <h2 data-aos="zoom-in">Contact Me</h2>
             <p class="text-light pt-2" data-aos="zoom-in" data-aos-delay="200">If you have any questions or would like to discuss an opportunity to work together, feel free to get in touch.</p>
           </div>
         </div>
         <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 pt-3 pb-2">
           <div class="d-flex flex-column align-items-start gap-4">
-            <div class="row" data-aos="zoom-in" data-aos-delay="400">
+            <div class="row" data-aos="fade-right" data-aos-delay="400">
               <div class="col-md-auto">
                 <button class="btn"><i class="bi-fill bi-telephone-fill"></i></button>
               </div>
@@ -333,7 +333,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
               </div>
             </div>
-            <form id="contactForm" name="submit-to-google-sheet" class="contactForm">
+            <form name="submit-to-google-sheet" class="contactForm">
               <div class="row pt-2">
                 <div class="col-md-6 mb-4">
                   <div class="form-floating">
@@ -360,7 +360,7 @@
                   </div>
                 </div>
                 <div class="col-md-12" data-aos="zoom-in" data-aos-delay="400">
-                  <button type="submit" class="btn btn-outline-primary btn-md px-2">Send Message</button>
+                  <button type="submit" class="btn btn-outline-primary btn-md px-2 btn-send">Send Message</button>
 
                   <button class="btn btn-loading-primary btn-md px-2 d-none" type="button" disabled>
                     <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
@@ -418,9 +418,9 @@
       const sendAlert = document.querySelector(".alert-primary");
 
       form.addEventListener("submit", (e) => {
-        e.preventDefault();
         btnSend.classList.toggle("d-none");
         btnLoading.classList.toggle("d-none");
+        e.preventDefault();
         fetch(scriptURL, { method: "POST", body: new FormData(form) })
           .then((response) => {
             console.log("Success!", response);
